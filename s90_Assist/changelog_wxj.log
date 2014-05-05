@@ -1,0 +1,23 @@
+->time:2013年11月2日 16:08:40
+1.添加pgcom_callb.Used属性，为按键添加检测功能，是否已经进入界面的标志。
+2.如果不调用初始化函数，造成死机。
+//usal界面按键调用
+#define KEYCALL(A) \
+    if(!pgcom_callb.Used)return;\
+    if(pgcom_callb.FunSets.RecvKeyDealfun(&pgcom_callb.FunSets.para_rec))\
+        return;
+
+3.反注册时
+void FigStop(key_callbackfun* pg)
+{
+    if(!pg->Used)
+        return;
+    FigInput_Stop();
+    Clear_Key_CallBack_Over(pg);//修改为 Clear_Key_CallBack_Over(pg);
+}
+
+4.删除重复的key_callbackfun;结构体定义。
+
+
+
+

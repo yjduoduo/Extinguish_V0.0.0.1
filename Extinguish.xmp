@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<TKStudioProject Name="Extinguish" BuildTool="15" ToolVer="default" Version="3.00" Author="YinHandong[Òüº®¶¬]" ProjectGUID="{230367FA-A749-4b5f-9F20-CDD9A4673A2B}">
+    <Configurations>
+        <Configuration Name="Extinguish" OPTDBG="1,-1,1,0,1,1,()" DEVICE="LPC1768" VENDOR="NXP (founded by Philips)" FAMINY="3" CPU='CPU=IRAM(0x10000000-0x10007FFF) IRAM2(0x2007C000-0x20083FFF) IROM(0-0x7FFFF) CLOCK(12000000) CPUTYPE(&quot;Cortex-M3&quot;)' RGF='REGFILE=LPC17xx.H(&quot;NXP\LPC17xx&quot;)' MONDL='MON=SARMCM3.DLL(&quot;-pLPC1700&quot;) TARMP1.DLL(&quot;-pLPC1768&quot;)' SIMDL='SIM=SARMCM3.DLL(&quot;-pLPC1700&quot;)  DARMP1.DLL(&quot;-pLPC1768&quot;)' SIMCLK="24.000000" OP="0" XROM="0,0,0,0#0,0,0,0#0,0,0,0" XRAM="0,0,0,0#0,0,0,0#0,0,0,0" OldName="Extinguish" OutBig="0" McLib="0" CLK="24.000000" Cross="0" IROM="1,0x00000000,0x00080000,1#0,0,0,0" IRAM="1,0x10000000,0x00008000,0#0,0,0,0" OldCPU="LPC1768">
+            <MDK_Output OutName="0,.\Extinguish\Extinguish" OutType="1" OutBatch="0" OutHex="0" OutList="0,.\Extinguish" Debug="1" Browse="1" />
+            <MDK_User BfC="0,()#0,()" BfB="0,()#0,()" AfB="1,(fromelf --bin --output .\compile_out\Extinguish.bin ..\compile_middle\Extinguish.axf)#0,()" Beep="1" SDebug="0" />
+            <MDK_CParam Def="" uDef="" Inc=".\s00_main;.\s01_Inc;.\s02_incAssemble;.\s03_Task;.\s05_Common;.\s08_Board;.\s09_Struct;.\s20_LcdManage;.\s22_LcdPage;.\s23_LcdSub;.\s28_LcdConst;.\s29_LcdOpeaMenuLib;.\s40_canPrtlStr;.\s41_Can11S;.\s41_CanProtocal;.\s42_CanManage;.\s44_CanBufLib;.\s47_EventBuf;.\s70_Periph;.\s71_PhInterface;.\s76_phSaveTask;.\s77_phSaveDef;.\s78_phSaveLib;.\s80_HardWareCpu;.\s81_HardWareEx;.\s82_HardWareLcdLib;.\s85_cpuDef;.\s86_driver;.\s83_CharLib;.\s48_EventBufCode;.\s49_EventBufWin;.\s50_EventBufDef;.\s07_State;.\s78_10_FlsInterface;.\s78_20_SaveCacu;.\s78_22_Manage;.\s78_23_Queue;.\s78_24_Hist;.\s78_26_SaveBuf;.\s78_30_SaveSim;.\s78_40_ItemM;.\s78_41_ItemOnePage;.\s78_42_ItemQueue;.\s78_43_ItemSerialFixAdr;.\s78_44_ItemSerialUnFixAdr;.\s78_01_incAssemble" Misc="" Opt="0,0" Code="0,1,0,0,0,0" Language="0,0,0,0" List="0" />
+            <MDK_AsmParam Def="" uDef="" Inc="" Misc="" Code="1,0,0,0,0,0" Language="0" List="1,1" />
+            <MDK_Linker Misc="" UseDef="1" Code="0,0,0,1,()" Sct="" List="1,1,1,1,1,1,1,1,1" first="" />
+            <MDK_Debug DbgType="0" sfSIM="0,1,(),()" hwSIM="1,1,1,()" Drv="(),()" SrvOpt="" />
+            <DeviceProperties Item0='BOOK0=DATASHTS\PHILIPS\LPC1768_66_65_64_DS.pdf(&quot;Data Sheet&quot;)' Item1='BOOK1=DATASHTS\PHILIPS\LPC17xx_SD.pdf(&quot;Short Data&quot;)' Item2='BOOK2=DATASHTS\PHILIPS\USER_MANUAL_LPC17xx.pdf(&quot;User Manual&quot;)' Item3='CPU=IRAM(0x10000000-0x10007FFF) IRAM2(0x2007C000-0x20083FFF) IROM(0-0x7FFFF) CLOCK(12000000) CPUTYPE(&quot;Cortex-M3&quot;)' Item4="FLDLL=UL2CM3(-O463 -S0 -C0 -FO7 -FD10000000 -FC800 -FN1 -FF0LPC_IAP_512 -FS00 -FL080000)" Item5='MON=SARMCM3.DLL(&quot;-pLPC1700&quot;) TARMP1.DLL(&quot;-pLPC1768&quot;)' Item6='REGFILE=LPC17xx.H(&quot;NXP\LPC17xx&quot;)' Item7='SFILE=&quot;STARTUP\NXP\LPC17xx\startup_LPC17xx.s&quot; (&quot;NXP LPC17xx Startup Code&quot;)' Item8='SIM=SARMCM3.DLL(&quot;-pLPC1700&quot;)  DARMP1.DLL(&quot;-pLPC1768&quot;)' />
+            <DeviceDescription Description="ARM 32-bit Cortex-M3 Microcontroller with MPU, CPU clock up to 80MHz,&#x0D;&#x0A;512kB on-chip Flash ROM with enhanced Flash Memory Accelerator,&#x0D;&#x0A;In-System Programming (ISP) and In-Application Programming (IAP),&#x0D;&#x0A;64kB RAM, Nested Vectored Interrupt Controller, &#x0D;&#x0A;Eight channel General purpose DMA controller, AHB Matrix, APB,&#x0D;&#x0A;Ethernet 10/100 MAC with RMII interface and dedicated DMA, &#x0D;&#x0A;USB 2.0 full-speed Device controller and Host/OTG controller with DMA, &#x0D;&#x0A;CAN 2.0B with two channels, Four UARTs, one with full Modem interface, &#x0D;&#x0A;Three I2C serial interfaces, Three SPI/SSP serial interfaces, I2S interface, &#x0D;&#x0A;General purpose I/O pins, 12-bit ADC with 8 channels, 10-bit DAC, &#x0D;&#x0A;Four 32-bit Timers with capture/compare, Standard PWM Timer block,&#x0D;&#x0A;Motor control PWM for three-phase Motor control, Quadrature Encoder,&#x0D;&#x0A;Watchdog Timer, Real Time Clock with optional Battery backup, &#x0D;&#x0A;System Tick Timer, Repetitive Interrupt Timer, Brown-out detect circuit, &#x0D;&#x0A;Power-On Reset, Power Management Unit, Wakeup Interrupt Controller,&#x0D;&#x0A;Crystal oscillator, 4MHz internal RC oscillator, PLL,&#x0D;&#x0A;JTAG and Serial Wire Debug/Trace Port with ETM" />
+        </Configuration>
+    </Configurations>
+    <Files>
+        <Filter Name="assist">
+            <File RelativePath=".\s90_Assist\bakCode.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s90_Assist\testCode.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s90_Assist\ProjectStruct.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s90_Assist\ProjectDescription.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s90_Assist\regular.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s90_Assist\Version.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s90_Assist\xxx.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s90_Assist\xxx.c" FileType="1" Output="xxx.o" ro="0" bss="0" rw="0">
+                <MDK_CParam Name="Extinguish" Def="" uDef="" Inc="" Misc="" Opt="0,2" Code="0,2,2,2,2,2" Language="2,2,2,0" List="0" />
+            </File>
+        </Filter>
+        <Filter Name="startUp">
+            <File RelativePath=".\s00_startUp\startup.s" FileType="2" Output="startup.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="main">
+            <File RelativePath=".\s00_main\mTask_Test.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s00_main\mTask_Test.c" FileType="1" Output="mTask_Test.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s00_main\mRunTask.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s00_main\mRunTask.c" FileType="1" Output="mRunTask.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s00_main\main.c" FileType="1" Output="main.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s01_inc">
+            <File RelativePath=".\s01_Inc\incFile.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s01_Inc\hwAndLib.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s01_Inc\incCommonHwCpu.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s01_Inc\incCommonHwEx.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s01_Inc\incCommonPeriph.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s01_Inc\sysDef.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s01_Inc\sysDef.c" FileType="1" Output="sysDef.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s01_Inc\prjBool.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s01_Inc\prjFosc.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s01_Inc\prjDataType.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s01_Inc\prjCompileCon.h" FileType="4" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s02_incAssemble">
+            <File RelativePath=".\s02_incAssemble\incSysCommon.h" FileType="4" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s03_Task" />
+        <Filter Name="s05_Common">
+            <File RelativePath=".\s05_Common\cstBits.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s05_Common\cstBits.c" FileType="1" Output="cstBits.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s05_Common\codeFig.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s05_Common\codeFig.c" FileType="1" Output="codeFig.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s05_Common\codeCrc.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s05_Common\codeCrc.c" FileType="1" Output="codeCrc.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s05_Common\codeComm.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s05_Common\codeComm.c" FileType="1" Output="codeComm.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s05_Common\bufCircle.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s05_Common\bufCircle.c" FileType="1" Output="bufCircle.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s07_State">
+            <File RelativePath=".\s07_State\OpeaAndEvtState.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s07_State\OpeaAndEvtState.c" FileType="1" Output="OpeaAndEvtState.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s07_State\sysStatus.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s07_State\sysStatus.c" FileType="1" Output="sysStatus.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s07_State\tmrTick.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s07_State\tmrTick.c" FileType="1" Output="tmrTick.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s08_Board">
+            <File RelativePath=".\s08_Board\sysPanel.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s08_Board\sysPanel.c" FileType="1" Output="sysPanel.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s08_Board\sysMachine.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s08_Board\sysMachine.c" FileType="1" Output="sysMachine.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s08_Board\meBoard.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s08_Board\meBoard.c" FileType="1" Output="meBoard.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s09_Struct">
+            <File RelativePath=".\s09_Struct\strEvtTrans.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s09_Struct\strEvtTrans.c" FileType="1" Output="strEvtTrans.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s09_Struct\strDevMLAT.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s09_Struct\strDevice.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s09_Struct\strDevice.c" FileType="1" Output="strDevice.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s09_Struct\strClock.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s09_Struct\loopFieldTypeState.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s09_Struct\canFrame.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s09_Struct\canFrame.c" FileType="1" Output="canFrame.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s20_LcdManage">
+            <File RelativePath=".\s20_LcdManage\lcdPg_MainAndEvtChange.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s20_LcdManage\lcdPg_MainAndEvtChange.c" FileType="1" Output="lcdPg_MainAndEvtChange.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s20_LcdManage\lcdTsk_PgNum.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s20_LcdManage\lcdTsk_PgNum.c" FileType="1" Output="lcdTsk_PgNum.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s20_LcdManage\lcdPg_Status.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s20_LcdManage\lcdPg_Status.c" FileType="1" Output="lcdPg_Status.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s20_LcdManage\lcdPg_MainOrEvt.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s20_LcdManage\lcdPg_MainOrEvt.c" FileType="1" Output="lcdPg_MainOrEvt.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s20_LcdManage\lcdPg_aSchedu.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s20_LcdManage\lcdPg_aSchedu.c" FileType="1" Output="lcdPg_aSchedu.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s20_LcdManage\lcdShowTask.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s20_LcdManage\lcdShowTask.c" FileType="1" Output="lcdShowTask.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s20_LcdManage\lcd_Para.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s20_LcdManage\tsk_lcd_incIn.h" FileType="4" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s22_LcdPage">
+            <File RelativePath=".\s22_LcdPage\posText.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s22_LcdPage\posText.c" FileType="1" Output="posText.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s22_LcdPage\lcdPg_KeyCall.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s22_LcdPage\lcdPg_KeyCall.c" FileType="1" Output="lcdPg_KeyCall.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s22_LcdPage\lcdPg_InitT.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s22_LcdPage\lcdPg_InitT.c" FileType="1" Output="lcdPg_InitT.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s22_LcdPage\lcdPg_ShowEvt.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s22_LcdPage\lcdPg_ShowEvt.c" FileType="1" Output="lcdPg_ShowEvt.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s22_LcdPage\lcdPg_pUserLogin.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s22_LcdPage\lcdPg_pUserLogin.c" FileType="1" Output="lcdPg_pUserLogin.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s22_LcdPage\lcdPg_pSelfHdChk.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s22_LcdPage\lcdPg_pSelfHdChk.c" FileType="1" Output="lcdPg_pSelfHdChk.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s22_LcdPage\lcdPg_pSelfChk.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s22_LcdPage\lcdPg_pSelfChk.c" FileType="1" Output="lcdPg_pSelfChk.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s22_LcdPage\lcdPg_Common.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s22_LcdPage\lcdPg_Common.c" FileType="1" Output="lcdPg_Common.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s22_LcdPage\lcdPg_Page.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s22_LcdPage\lcdPg_Page.c" FileType="1" Output="lcdPg_Page.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s23_LcdSub">
+            <File RelativePath=".\s23_LcdSub\lcdSub_SwOneMiniEvt.c" FileType="1" Output="lcdSub_SwOneMiniEvt.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s23_LcdSub\lcdSub_SwOneMiniEvt.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s23_LcdSub\lcdSub_SwOneEvt.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s23_LcdSub\lcdSub_SwOneEvt.c" FileType="1" Output="lcdSub_SwOneEvt.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s23_LcdSub\lcdSub_SwDev.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s23_LcdSub\lcdSub_SwDev.c" FileType="1" Output="lcdSub_SwDev.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s23_LcdSub\lcdSub_Pssw.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s23_LcdSub\lcdSub_Pssw.c" FileType="1" Output="lcdSub_Pssw.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s23_LcdSub\lcdSub_ModeTextFig.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s23_LcdSub\lcdSub_ModeTextFig.c" FileType="1" Output="lcdSub_ModeTextFig.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s23_LcdSub\lcdSub_InputFig.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s23_LcdSub\lcdSub_InputFig.c" FileType="1" Output="lcdSub_InputFig.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s23_LcdSub\lcdSub_Flash.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s23_LcdSub\lcdSub_Flash.c" FileType="1" Output="lcdSub_Flash.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s28_LcdConst">
+            <File RelativePath=".\s28_LcdConst\lcdCst_WhenModify.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s28_LcdConst\lcdCst_PgString.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s28_LcdConst\lcdCst_PgString.c" FileType="1" Output="lcdCst_PgString.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s28_LcdConst\lcdCst_PgStrEvtThing.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s28_LcdConst\lcdCst_PgStrEvtThing.c" FileType="1" Output="lcdCst_PgStrEvtThing.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s28_LcdConst\lcdCst_PgStrDeteType.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s28_LcdConst\lcdCst_PgStrDeteType.c" FileType="1" Output="lcdCst_PgStrDeteType.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s28_LcdConst\lcdCst_PageNum.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s28_LcdConst\lcdCst_PageFunction.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s28_LcdConst\lcdCst_Page.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s28_LcdConst\lcdCst_Page.c" FileType="1" Output="lcdCst_Page.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s28_LcdConst\lcdCst_Menu.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s28_LcdConst\lcdCst_Menu.c" FileType="1" Output="lcdCst_Menu.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s29_LcdOpeaMenuLib">
+            <File RelativePath=".\s29_LcdOpeaMenuLib\opeaMenuLib_incOut.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s29_LcdOpeaMenuLib\OpeaMenu_Driver_V0.0.0.1_0.0.8.lib" FileType="10" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s29_LcdOpeaMenuLib\lcdCst_OpeaMenu.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s29_LcdOpeaMenuLib\lcdCst_OpeaMenu.c" FileType="1" Output="lcdCst_OpeaMenu.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s29_LcdOpeaMenuLib\lcdCst_OpaMenuInterface.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s29_LcdOpeaMenuLib\lcdCst_OpaMenuInterface.c" FileType="1" Output="lcdCst_OpaMenuInterface.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s29_LcdOpeaMenuLib\lcdCst_OpaMenu_Inc_extern.h" FileType="4" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s40_canPrtlStr">
+            <File RelativePath=".\s40_canPrtlStr\canProtocalStr.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s40_canPrtlStr\canProtocalStr.c" FileType="1" Output="canProtocalStr.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s40_canPrtlStr\can_DataOrFile.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s40_canPrtlStr\can_DataOrFile.c" FileType="1" Output="can_DataOrFile.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s41_Can11S">
+            <File RelativePath=".\s41_Can11S\CCan_11S_Def.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_Can11S\can11sPrtlComm.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_Can11S\can11sPrtlComm.c" FileType="1" Output="can11sPrtlComm.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_Can11S\can11sPrtl_iTx.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_Can11S\can11sPrtl_iTx.c" FileType="1" Output="can11sPrtl_iTx.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_Can11S\can11sPrtl_iRx.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_Can11S\can11sPrtl_iRx.c" FileType="1" Output="can11sPrtl_iRx.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_Can11S\can11sPrtl_iCan.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_Can11S\can11sPrtl_iCan.c" FileType="1" Output="can11sPrtl_iCan.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_Can11S\can11sPrtl_eTx.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_Can11S\can11sPrtl_eTx.c" FileType="1" Output="can11sPrtl_eTx.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_Can11S\can11sPrtl_eRx.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_Can11S\can11sPrtl_eRx.c" FileType="1" Output="can11sPrtl_eRx.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_Can11S\can11sPrtl_eCan.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_Can11S\can11sPrtl_eCan.c" FileType="1" Output="can11sPrtl_eCan.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_Can11S\can11sFile.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_Can11S\can11sFile.c" FileType="1" Output="can11sFile.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s41_CanProtocal">
+            <File RelativePath=".\s41_CanProtocal\canPrtlComm.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_CanProtocal\canPrtlComm.c" FileType="1" Output="canPrtlComm.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_CanProtocal\canPrtl_iTx.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_CanProtocal\canPrtl_iTx.c" FileType="1" Output="canPrtl_iTx.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_CanProtocal\canPrtl_iRx.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_CanProtocal\canPrtl_iRx.c" FileType="1" Output="canPrtl_iRx.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_CanProtocal\canPrtl_iCan.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_CanProtocal\canPrtl_iCan.c" FileType="1" Output="canPrtl_iCan.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_CanProtocal\canPrtl_File.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_CanProtocal\canPrtl_File.c" FileType="1" Output="canPrtl_File.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_CanProtocal\canPrtl_eTx.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_CanProtocal\canPrtl_eTx.c" FileType="1" Output="canPrtl_eTx.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_CanProtocal\canPrtl_eRx.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_CanProtocal\canPrtl_eRx.c" FileType="1" Output="canPrtl_eRx.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_CanProtocal\canPrtl_eCan.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s41_CanProtocal\canPrtl_eCan.c" FileType="1" Output="canPrtl_eCan.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s42_CanManage">
+            <File RelativePath=".\s42_CanManage\CanIntRxBuf.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s42_CanManage\CanIntRxBuf.c" FileType="1" Output="CanIntRxBuf.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s42_CanManage\CanIntCouple.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s42_CanManage\CanIntCouple.c" FileType="1" Output="CanIntCouple.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s42_CanManage\CanHd_Interface.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s42_CanManage\CanHd_Interface.c" FileType="1" Output="CanHd_Interface.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s42_CanManage\iCanRxTask.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s42_CanManage\iCanRxTask.c" FileType="1" Output="iCanRxTask.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s42_CanManage\eCanRxTask.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s42_CanManage\eCanRxTask.c" FileType="1" Output="eCanRxTask.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s42_CanManage\CanTxTask.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s42_CanManage\CanTxTask.c" FileType="1" Output="CanTxTask.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s42_CanManage\Can_Manage.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s42_CanManage\Can_Manage.c" FileType="1" Output="Can_Manage.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s44_CanBufLib">
+            <File RelativePath=".\s44_CanBufLib\CanBuf_Driver_V0.0.0.1_0.0.8.lib" FileType="10" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s44_CanBufLib\canBufLib_Inc_Extern.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s44_CanBufLib\CanBufLib_ReDef.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s44_CanBufLib\CanBufLib_strFileProp.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s44_CanBufLib\CanBufLib_TxState.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s44_CanBufLib\CanBufLib_TxRx_Buf.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s44_CanBufLib\CanBufLib_TxFile_incOut.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s44_CanBufLib\CanBufLib_RxFile_incOut.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s44_CanBufLib\CanBufLib_incOut.h" FileType="4" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s47_EventBuf">
+            <File RelativePath=".\s47_EventBuf\EventBuf_Driver_V0.0.0.1_1.7.lib" FileType="10" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s47_EventBuf\evtStrDef.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s47_EventBuf\evtStrCommon.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s47_EventBuf\evt_Class.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s47_EventBuf\evt_Class.c" FileType="1" Output="evt_Class.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s47_EventBuf\evt_Para.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s47_EventBuf\evt_Buf_incIn_Extern.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s47_EventBuf\evt_Buf_incOut.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s47_EventBuf\evtThingDef.h" FileType="4" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s70_Periph">
+            <File RelativePath=".\s70_Periph\phIoPwrState.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s70_Periph\phIoPwrState.c" FileType="1" Output="phIoPwrState.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s70_Periph\phIoPwrChkSwitch.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s70_Periph\phIoPwrChkSwitch.c" FileType="1" Output="phIoPwrChkSwitch.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s70_Periph\KeyBuf_Driver_V0.0.0.1_0.0.5.lib" FileType="10" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s70_Periph\keyBufJdgLib_incOut.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s70_Periph\keyBufJdgLib_Inc_Extern.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s70_Periph\phIoKeyScan.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s70_Periph\phIoKeyScan.c" FileType="1" Output="phIoKeyScan.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s70_Periph\phIoSound.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s70_Periph\phIoSound.c" FileType="1" Output="phIoSound.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s70_Periph\phIoScan.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s70_Periph\phIoScan.c" FileType="1" Output="phIoScan.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s70_Periph\phIoLed.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s70_Periph\phIoLed.c" FileType="1" Output="phIoLed.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s70_Periph\phWatchDogTask.c" FileType="1" Output="phWatchDogTask.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s70_Periph\phWatchDogTask.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s70_Periph\phClock.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s70_Periph\phClock.c" FileType="1" Output="phClock.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s71_PhInterface">
+            <File RelativePath=".\s71_PhInterface\fls_Interface.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s71_PhInterface\fls_Interface.c" FileType="1" Output="fls_Interface.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s71_PhInterface\UartHd_Interface.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s71_PhInterface\UartHd_Interface.c" FileType="1" Output="UartHd_Interface.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s71_PhInterface\hw00_HdInt.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s71_PhInterface\hw00_HdInt.c" FileType="1" Output="hw00_HdInt.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s71_PhInterface\hw00_CallBack.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s71_PhInterface\hw00_CallBack.c" FileType="1" Output="hw00_CallBack.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s71_PhInterface\HdInterface.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s71_PhInterface\HdInterface.c" FileType="1" Output="HdInterface.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s71_PhInterface\CpuReg.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s71_PhInterface\CpuReg.c" FileType="1" Output="CpuReg.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s76_phSaveTask">
+            <File RelativePath=".\s76_phSaveTask\saveItemAux.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s76_phSaveTask\saveItemAux.c" FileType="1" Output="saveItemAux.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s76_phSaveTask\saveTmrPwroffAndHist.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s76_phSaveTask\saveTmrPwroffAndHist.c" FileType="1" Output="saveTmrPwroffAndHist.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s76_phSaveTask\saveTask.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s76_phSaveTask\saveTask.c" FileType="1" Output="saveTask.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s77_phSaveDef">
+            <File RelativePath=".\s77_phSaveDef\strFlsQue.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s77_phSaveDef\strFlsItmStruct.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s77_phSaveDef\strFlsAdrDef.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s77_phSaveDef\strFlsAdrDef.c" FileType="1" Output="strFlsAdrDef.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s77_phSaveDef\historyClsDef.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s77_phSaveDef\flsReDef.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s77_phSaveDef\flsStoreBytesDef.h" FileType="4" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s78_phSaveLib">
+            <File RelativePath=".\s78_phSaveLib\saveInc_Extern.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_phSaveLib\Save_Manage_incOut.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_phSaveLib\Save_Item_incOut.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_phSaveLib\Save_Hist_incOut.h" FileType="4" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s78_30_SaveSim">
+            <File RelativePath=".\s78_30_SaveSim\sim_saveItem.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_30_SaveSim\sim_saveItem.c" FileType="1" Output="sim_saveItem.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s78_01_incAssemble">
+            <File RelativePath=".\s78_01_incAssemble\SaveTask_incIn.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_01_incAssemble\saveInc_Common.h" FileType="4" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s78_10_FlsInterface">
+            <File RelativePath=".\s78_10_FlsInterface\flsWrite.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_10_FlsInterface\flsWrite.c" FileType="1" Output="flsWrite.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_10_FlsInterface\flsErase.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_10_FlsInterface\flsErase.c" FileType="1" Output="flsErase.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s78_20_SaveCacu">
+            <File RelativePath=".\s78_20_SaveCacu\strFlsItmStrCacu.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_20_SaveCacu\strFlsItmStrCacu.c" FileType="1" Output="strFlsItmStrCacu.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_20_SaveCacu\flsAdrCalculate.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_20_SaveCacu\flsAdrCalculate.c" FileType="1" Output="flsAdrCalculate.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s78_22_Manage">
+            <File RelativePath=".\s78_22_Manage\saveManage.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_22_Manage\saveManage.c" FileType="1" Output="saveManage.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_22_Manage\flsItemState.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_22_Manage\flsItemState.c" FileType="1" Output="flsItemState.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_22_Manage\flsCopyTask.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_22_Manage\flsCopyTask.c" FileType="1" Output="flsCopyTask.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_22_Manage\flashIdAssign.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_22_Manage\flashIdAssign.c" FileType="1" Output="flashIdAssign.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s78_23_Queue">
+            <File RelativePath=".\s78_23_Queue\strFlsQue.c" FileType="1" Output="strFlsQue.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_23_Queue\flsInqPoint.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_23_Queue\flsInqPoint.c" FileType="1" Output="flsInqPoint.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s78_24_Hist">
+            <File RelativePath=".\s78_24_Hist\saveHistPoint.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_24_Hist\saveHistPoint.c" FileType="1" Output="saveHistPoint.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_24_Hist\saveHistory.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_24_Hist\saveHistory.c" FileType="1" Output="saveHistory.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_24_Hist\phSaveHist_incIn.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_24_Hist\historyWrite.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_24_Hist\historyWrite.c" FileType="1" Output="historyWrite.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_24_Hist\historyWrBuf.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_24_Hist\historyWrBuf.c" FileType="1" Output="historyWrBuf.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_24_Hist\historyRead.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_24_Hist\historyRead.c" FileType="1" Output="historyRead.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s78_26_SaveBuf">
+            <File RelativePath=".\s78_26_SaveBuf\flsWrApplySave.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_26_SaveBuf\flsWrApplySave.c" FileType="1" Output="flsWrApplySave.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_26_SaveBuf\flsWrApplyBuf.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_26_SaveBuf\flsWrApplyBuf.c" FileType="1" Output="flsWrApplyBuf.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s78_40_ItemM">
+            <File RelativePath=".\s78_40_ItemM\saveOthers.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_40_ItemM\saveOthers.c" FileType="1" Output="saveOthers.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_40_ItemM\saveItem_incIn.h" FileType="4" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s78_41_ItemOnePage">
+            <File RelativePath=".\s78_41_ItemOnePage\saveUserLogin.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_41_ItemOnePage\saveUserLogin.c" FileType="1" Output="saveUserLogin.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_41_ItemOnePage\savePnConfig.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_41_ItemOnePage\savePnConfig.c" FileType="1" Output="savePnConfig.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_41_ItemOnePage\saveNetMachine.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_41_ItemOnePage\saveNetMachine.c" FileType="1" Output="saveNetMachine.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_41_ItemOnePage\saveMeStatus.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_41_ItemOnePage\saveMeStatus.c" FileType="1" Output="saveMeStatus.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_41_ItemOnePage\saveMachProbat.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_41_ItemOnePage\saveMachProbat.c" FileType="1" Output="saveMachProbat.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_41_ItemOnePage\saveExtgZoneConfig.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_41_ItemOnePage\saveExtgZoneConfig.c" FileType="1" Output="saveExtgZoneConfig.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s78_42_ItemQueue">
+            <File RelativePath=".\s78_42_ItemQueue\savePowerOff.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_42_ItemQueue\savePowerOff.c" FileType="1" Output="savePowerOff.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s78_43_ItemSerialFixAdr">
+            <File RelativePath=".\s78_43_ItemSerialFixAdr\saveNote.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_43_ItemSerialFixAdr\saveNote.c" FileType="1" Output="saveNote.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_43_ItemSerialFixAdr\saveLinkProg.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_43_ItemSerialFixAdr\saveLinkProg.c" FileType="1" Output="saveLinkProg.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_43_ItemSerialFixAdr\saveField.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_43_ItemSerialFixAdr\saveField.c" FileType="1" Output="saveField.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s78_44_ItemSerialUnFixAdr">
+            <File RelativePath=".\s78_44_ItemSerialUnFixAdr\saveRelateAddr.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_44_ItemSerialUnFixAdr\saveRelateAddr.c" FileType="1" Output="saveRelateAddr.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_44_ItemSerialUnFixAdr\saveDisable.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s78_44_ItemSerialUnFixAdr\saveDisable.c" FileType="1" Output="saveDisable.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s80_HardWareCpu">
+            <File RelativePath=".\s80_HardWareCpu\hw20_AD.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s80_HardWareCpu\hw20_AD.c" FileType="1" Output="hw20_AD.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s80_HardWareCpu\hw10_MaskCan.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s80_HardWareCpu\hw10_MaskCan.c" FileType="1" Output="hw10_MaskCan.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s80_HardWareCpu\hw10_Can.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s80_HardWareCpu\hw10_Can.c" FileType="1" Output="hw10_Can.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s80_HardWareCpu\hw16_IIC.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s80_HardWareCpu\hw16_IIC.c" FileType="1" Output="hw16_IIC.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s80_HardWareCpu\hw01_Timer.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s80_HardWareCpu\hw01_Timer.c" FileType="1" Output="hw01_Timer.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s80_HardWareCpu\hd04_PinFunc.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s80_HardWareCpu\hd04_PinFunc.c" FileType="1" Output="hd04_PinFunc.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s80_HardWareCpu\hd03_Gpio.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s80_HardWareCpu\hd03_Gpio.c" FileType="1" Output="hd03_Gpio.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s80_HardWareCpu\CUart.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s80_HardWareCpu\CUart.c" FileType="1" Output="CUart.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s81_HardWareEx">
+            <File RelativePath=".\s81_HardWareEx\nandflash_hy27uf081g2a.c" FileType="1" Output="nandflash_hy27uf081g2a.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s81_HardWareEx\nandflash_hy27uf081g2a.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s81_HardWareEx\hwEx21_SST39vf800A.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s81_HardWareEx\hwEx21_SST39vf800A.c" FileType="1" Output="hwEx21_SST39vf800A.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s81_HardWareEx\hwEx03_Pcf8563.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s81_HardWareEx\hwEx03_Pcf8563.c" FileType="1" Output="hwEx03_Pcf8563.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s81_HardWareEx\hwEx10_GpioDef.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s81_HardWareEx\hwEx10_GpioDef.c" FileType="1" Output="hwEx10_GpioDef.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s81_HardWareEx\hwEx10_PinDef.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s81_HardWareEx\hwEx10_PinDef.c" FileType="1" Output="hwEx10_PinDef.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s82_HardWareLcdLib">
+            <File RelativePath=".\s82_HardWareLcdLib\Lcd_Driver_V0.0.0.1_9_Cn12En6Asc6.lib" FileType="10" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s82_HardWareLcdLib\LcdLib_incOut.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s82_HardWareLcdLib\LcdLib_Inc_Extern.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s82_HardWareLcdLib\LcdLib_Inc_Extern.c" FileType="1" Output="LcdLib_Inc_Extern.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s82_HardWareLcdLib\Lcd_swBuf_Fig88.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s82_HardWareLcdLib\Lcd_swBuf_Ascii.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s82_HardWareLcdLib\Lcd_swBuf_Graph.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s82_HardWareLcdLib\Lcd_swBuf_Figure.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s82_HardWareLcdLib\Lcd_swBuf_Text.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s82_HardWareLcdLib\Lcd_swBuf_Task.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s82_HardWareLcdLib\hwEx13_lcd_DataType.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s82_HardWareLcdLib\hwEx11_lcd_DefPara.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s82_HardWareLcdLib\hwEx11_lcd_Def_charLib.h" FileType="4" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s83_CharLib">
+            <File RelativePath=".\s83_CharLib\charLib_Inc_Extern.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s83_CharLib\hwEx16_charLibAscii128.c" FileType="1" Output="hwEx16_charLibAscii128.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s83_CharLib\hwEx16_charLibAscii126.c" FileType="1" Output="hwEx16_charLibAscii126.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s83_CharLib\hwEx16_charLibAscii08.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s83_CharLib\hwEx16_charLibAscii08.c" FileType="1" Output="hwEx16_charLibAscii08.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s83_CharLib\hwEx16_charLib16.c" FileType="1" Output="hwEx16_charLib16.o" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s83_CharLib\hwEx16_charLib12.c" FileType="1" Output="hwEx16_charLib12.o" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s85_cpuDef">
+            <File RelativePath=".\s85_cpuDef\LPC177x_8x.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s85_cpuDef\core_cm3.h" FileType="4" ro="0" bss="0" rw="0" />
+        </Filter>
+        <Filter Name="s86_driver">
+            <File RelativePath=".\s86_driver\lpc_types.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\system_LPC177x_8x.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\Lpc177xDriverLib_V1.0_2.lib" FileType="10" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\lpc177x_8x_wwdt.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\lpc177x_8x_uart.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\lpc177x_8x_timer.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\lpc177x_8x_systick.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\lpc177x_8x_qei.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\lpc177x_8x_pwm.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\lpc177x_8x_pinsel.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\lpc177x_8x_nvic.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\lpc177x_8x_libcfg_default.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\lpc177x_8x_i2c.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\lpc177x_8x_gpio.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\lpc177x_8x_emc.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\lpc177x_8x_emac.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\lpc177x_8x_crc.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\lpc177x_8x_clkpwr.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\lpc177x_8x_can.h" FileType="4" ro="0" bss="0" rw="0" />
+            <File RelativePath=".\s86_driver\lpc177x_8x_adc.h" FileType="4" ro="0" bss="0" rw="0" />
+        </Filter>
+    </Files>
+</TKStudioProject>
